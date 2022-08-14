@@ -1,0 +1,21 @@
+{
+  "name": "template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules npx jest"
+  },
+  "author": "Yushin Ito",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.21.0",
+    "eslint-config-prettier": "^8.5.0",
+    "prettier": "^2.7.1"
+  },
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "eslint-plugin-jest": "^26.8.2"
+  }
+}
