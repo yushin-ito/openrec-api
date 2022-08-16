@@ -1,5 +1,3 @@
-const sum = (a, b) => {
-  return a + b;
-};
+import OpenrecAPI from "./src/openrec-api";
 
-export default sum
+export default { OpenrecAPI };
