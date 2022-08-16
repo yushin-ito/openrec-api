@@ -47,6 +47,17 @@ class OpenrecAPI {
     const movieInfo = await this.getRequest(url);
     return movieInfo ? movieInfo : {};
   }
+
+  async getLiveInfo(userId) {
+    const movieInfo = await this.getMovieInfo(userId)
+    const liveInfo = movieInfo['0']
+    return liveInfo ? liveInfo : {};
+  }
+
+  async isLive(userId) {
+    const liveInfo = this.getLiveInfo(userId)
+    return Boolean(liveInfo["is_live"]);
+  }
 }
 
 export default OpenrecAPI;
